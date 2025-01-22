@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Oswald:wght@700&display=swap');
+/*font-family: 'Barlow', sans-serif; light
+font-family: 'Oswald', sans-serif; bold*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #fff;
+}
+#hakkimizda:hover{
+    background-color: #ffff;
+}
+#hakkimizda:hover a{
+    color: black;
+}
+
+#iletisim:hover{
+    background-color: #ffff;
+}
+#iletisim:hover a{
+    color: black;
+}
+
+
+#hizmetlerimiz:hover{
+    background-color: #ffff;
+}
+#hizmetlerimiz:hover a{
+    color: black;
+}
+
+
+
+
+.container{
+    display: grid;
+    grid-template-areas: "box""box1""price""image""konum";
+}
+
+.logo-container{
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+
+.logo-text{
+    position: absolute;
+    color: #fff;
+    padding: 1.25rem 4.375rem; /* 20px 70px */
+    border: solid 0.1875rem black; /* 3px */
+    font-size: 2.5rem; /* 40px */
+}
+
+.logo{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.container{
+    margin-top: 1.25rem; /* 20px */
+}
+
+.container .box{
+    margin-left: 1.25rem; /* 20px */
+    grid-area: box;
+    display: grid;
+    grid-template-areas: "img text";
+    box-shadow: 0.5625rem 0px 1.125rem 0.1875rem rgba(0,0,0,0.75); /* 9px 0px 18px 3px */
+    width: 56.25rem; /* 900px */
+    height: 18.75rem; /* 300px */
+}
+
+.img-area{
+    grid-area: img;
+    width: 25rem; /* 400px */
+    height: 18.75rem; /* 300px */
+}
+
+.container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box .text{
+    margin-top: 1.25rem; /* 20px */
+    margin-left: 1.875rem; /* 30px */
+    grid-area: text;
+}
+
+/* BOX1 */
+
+.box1{
+    grid-area: box1;
+    box-shadow: 0.5625rem 0px 1.125rem 0.1875rem rgba(0,0,0,0.75); /* 9px 0px 18px 3px */
+    margin-top: 21.875rem; /* 350px */
+    display: grid;
+    grid-template-areas: "text img";
+    width: 56.25rem; /* 900px */
+    height: 18.75rem; /* 300px */
+    position: absolute;
+    right: 0;
+    margin-right: 1.25rem; /* 20px */
+}
+
+.container .box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box1 .text{
+    margin-top: 1.25rem; /* 20px */
+    margin-left: 1.875rem; /* 30px */
+    margin-right: 0.625rem; /* 10px */
+    grid-area: text;
+}
+
+.text span{
+    font-family: 'Barlow', sans-serif;
+}
+
+/* CONTAINER-PRICE */
+
+.container-price{
+    display: grid;
+    grid-template-areas: "box""box";
+    position: relative;
+    margin-top: 25rem; /* 400px */
+    grid-area: price;
+    width: 100%;
+}
+
+.container-price .price-img{
+    height: 43.75rem; /* 700px */
+}
+
+.container-price .price-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.price-box{
+    padding: 8.75rem 1.875rem; /* 140px 30px */
+    grid-area: box;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 1.875rem;
+    box-shadow: inset -0.0625rem 0.0625rem 0.375rem 0rem rgba(143,143,143,1); /* inset -1px 1px 6px 0px */
+}
+
+.price-box1{
+    grid-area: box1;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    padding: 8.75rem 1.875rem; /* 140px 30px */
+    background-color: #fff;
+    border-radius: 1.875rem;
+    box-shadow: inset -0.0625rem 0.0625rem 0.375rem 0rem rgba(143,143,143,1); /* inset -1px 1px 6px 0px */
+}
+
+.price-box .bilgi,
+.price-box1 .bilgi{
+    position: absolute;
+    top: 1.875rem; /* 30px */
+    font-size: 1.875rem; /* 30px */
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name{
+    font-family: 'Oswald', sans-serif;
+}
+
+.price{
+    font-size: 3.75rem; /* 60px */
+    font-weight: bold;
+    border-bottom: solid 0.125rem black; /* 2px */
+}
+
+.price span{
+    font-size: 0.625rem; /* 10px */
+    color: gray;
+}
+
+.price-content{
+    margin-top: 3.125rem; /* 50px */
+}
+
+li{
+    list-style: none;
+}
+
+.price-box .price-content li,
+.price-box1 .price-content li{
+    margin-bottom: 1.25rem; /* 20px */
+    font-size: 1.25rem; /* 20px */
+}
+
+.price-content i{
+    color: red;
+    margin-right: 0.9375rem; /* 15px */
+}
+
+.container-images{
+    display: grid;
+    grid-area: image;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.25rem; /* 20px */
+}
+
+.images-text{
+    margin-bottom: 1.25rem; /* 20px */
+    font-size: 1.875rem; /* 30px */
+    border-bottom: solid 0.0625rem black; /* 1px */
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.9375rem; /* 15px */
+}
+
+.image{
+    max-width: 18.75rem; /* 300px */
+    max-height: 18.75rem; /* 300px */
+}
+
+.images .image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* KONUM LINE */
+
+.konum-container{
+    display: grid;
+    grid-area: konum;
+    margin-top: 1.5625rem; /* 25px */
+}
+
+.konum-line{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.25rem; /* 100px */
+}
+
+.iletisim-container{    
+    margin-left: auto;
+    text-align: center;
+}
+
+.iletisim-container span{
+    font-size: 1.5rem; /* 24px */
+    border-bottom: solid 0.0625rem black; /* 1px */
+}
+
+.iletisim-container .telefon{
+    margin-top: 0.625rem; /* 10px */
+    font-size: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.social i{
+    font-size: 1.875rem; /* 30px */
+}
+
+.calisma-saati{
+    text-align: left;
+}
+
+.calisma-saati span{
+    font-size: 1.5rem; /* 24px */
+    border-bottom: solid 0.0625rem black; /* 1px */
+}
+
+.calisma-saati ul{
+    margin-top: 0.625rem; /* 10px */
+}
+
+.calisma-saati li{
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 0.3125rem; /* 5px */
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 0.78125rem; /* 1.25rem */
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar{
+    position:relative;
+    display: flex;
+    color: #ffff;
+    padding: 30px;
+}
+.nav-bar{
+    background-color: black;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) { /* 320px - 480px */
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .logo-container{
+        height: 200px;
+    }
+    .logo img{
+        height: 100%;
+    }
+    .logo-text{
+        display: none;
+    }
+
+    .img-area{
+        width: 320px;
+    }
+    /*box*/
+    .container .box{
+    margin-left: 0;
+    /* margin-bottom: 500px; */
+    grid-template-areas: "img" "text";
+    width: 10px;
+    margin-bottom: 20px;
+    }
+    .box .text{
+        margin-left: 5px;
+    }
+    /*box1*/
+    .container .box1{
+    position: relative;
+    grid-template-areas: "img" "text";
+    width: 10px;
+    }
+    .box1 .text{
+        margin-left:5px;
+    }
+    /*Container price*/
+    .container-price{
+        width: 200px;
+        grid-template-areas: "box""box";
+
+    }
+    .price-box{
+        position: relative;
+        width: 320px;
+        left: 0;
+    }
+
+    .container-price .price-img img{
+        display: none;  
+    }
+
+    .price-box1{
+        position: relative;
+        width: 320px;
+        margin-left: -320px; 
+        margin-top: 10px;
+    }
+    /*images*/
+    .container-images{
+        margin-left: 0; 
+        
+    }
+    .images{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+        margin: auto;
+    }
+    .image{
+        width: 100px;
+        height: 100px;
+    }
+
+    /*KONUM*/
+    .konum-line{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+
+    .iletisim-container{    
+        /* margin-left: -270px; */
+        margin: auto;
+        text-align: center;
+    }
+    .iletisim-container .telefon{
+        margin-bottom: 5px
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .calisma-saati{
+        margin: auto;
+    }
+
+
+
+
+
+
+
+}

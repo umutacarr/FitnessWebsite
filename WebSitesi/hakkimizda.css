@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    background-color: black;
+    color: #ffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 300px;
+}
+section{
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+
+}
+section p{
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+section span{
+    font-style: normal;
+    font-weight: bold;
+
+}
+
